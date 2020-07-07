@@ -97,6 +97,11 @@ a.link {
   margin-right: 50px;
 }
 
+.adress-nav .link {
+  display: flex;
+  align-items: center;
+}
+
 .adress-nav {
   display: flex;
   margin-left: auto;
@@ -206,6 +211,91 @@ a.link {
 
 /* ОБЩИЙ ПОДВАЛ СТРАНИЦ */
 
+.button-telegram {
+  width: 200px;
+  height: 50px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button-email {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.flex-email {
+  margin-top: 72px;
+}
+
+.join {
+  margin-top: 72px;
+}
+
+.button-email {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.footer-button-title {
+  padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  flex-wrap: wrap;
+  width: 358px;
+  height: 50px;
+}
+
+.icon-telegram {
+  fill: var(--white-text);
+}
+
+.radius-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+}
+
+.radius-footer {
+  margin-top: 20px;
+}
+
+.flex-container .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-link {
+  fill: var(--white-text);
+}
+
 .footer-button {
   width: 200px;
   height: 50px;
@@ -221,10 +311,6 @@ a.link {
 
 .footer .join {
   margin-right: 94px;
-}
-
-.footer-adress {
-  margin-bottom: 62px;
 }
 
 .footer-adress .list {
@@ -244,6 +330,11 @@ a.link {
   margin-bottom: 9px;
 }
 
+.footer-adress-item .link:hover,
+.footer-adress-item .link:focus {
+  color: var(--accent-color);
+}
+
 ul {
   list-style: none;
 }
@@ -254,10 +345,6 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.footer .flex-container {
-  align-items: baseline;
 }
 
 .flex-container {
@@ -271,11 +358,14 @@ ul {
 
 .footer .logo {
   display: block;
-  margin-right: 0;
-  padding-top: 58px;
+
   padding-left: 15px;
 
   margin-bottom: 8px;
+}
+
+.footer-adress {
+  margin-top: 60px;
 }
 
 .footer-adress-item p {
@@ -312,14 +402,14 @@ ul {
   color: var(--white-text);
 }
 
-.join .link:hover,
-.join .link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-text);
-}
-
 .join .footer-title {
   margin-bottom: 20px;
+}
+
+.radius-footer:hover,
+.radius-footer:focus {
+  fill: var(--white-text);
+  background-color: var(--accent-color);
 }
 
 /* ----------------------------------------- */
@@ -474,27 +564,35 @@ ul {
 /* СТУДИЯ: FEATURES */
 
 .list-radius {
+  padding: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.list-radius > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .link-radius {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
 }
 
+.link-radius {
+  fill: #afb1b8;
+}
+
 .link-radius:hover {
   background-color: var(--accent-color);
-}
-
-.icon-instagram {
-  fill: var(--secondary-text-color);
-}
-
-.icon-instagram:hover {
-  fill: var(--secondary-text-color);
+  fill: var(--white-text);
 }
 
 .flex-team .item-width {
@@ -574,30 +672,45 @@ ul {
 
 /* СТУДИЯ: CLIENTS */
 
-.clients .title {
-  padding-top: 94px;
+.item-clients:hover,
+.item-clients:focus {
+  background-color: var(--accent-color);
 }
 
-.item-clients + .item-clients {
-  margin-left: 30px;
+.clients-color {
+  fill: #afb1b8;
 }
 
-.clients .container {
+.container-clients {
   width: 1170px;
-  height: 372px;
-  padding-left: 15px;
-  margin-left: auto;
-  padding-right: 15px;
   margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.clients .list {
-  align-items: center;
+.container-clients .list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
-.clients {
+.item-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.item-clients:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients .title {
   margin-top: 94px;
 }
 

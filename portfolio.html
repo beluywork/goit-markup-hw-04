@@ -17,7 +17,7 @@
   <body>
     <header class="page-header">
       <nav class="container main-nav">
-        <a href="#" class="logo">
+        <a href="./index.html" class="logo">
           <span class="logo-accent">Web</span>
           <span class="logo-black">Studio</span>
         </a>
@@ -30,9 +30,21 @@
         </ul>
         <ul class="adress-nav list">
           <li class="item">
-            <a href="#" class="link">info@devstudio.com</a>
+            <a href="mailto:@devstudio.com" class="link">
+              <svg class="icon-message" width="16px" height="11px">
+                <use href="./img/symbol-defs (1).svg#icon-message"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="item"><a href="#" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="icon-telephone" width="10px" height="15px">
+                <use href="./img/symbol-defs (1).svg#icon-telephone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -212,10 +224,12 @@
                 <p>г. Киев, пр-т Леси Украинки, 26</p>
               </li>
               <li class="footer-adress-item">
-                <a href="#" class="link">info@example.com</a>
+                <a href="mailto:info@example.com" class="link"
+                  >info@example.com</a
+                >
               </li>
               <li class="footer-adress-item">
-                <a href="#" class="link">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
               </li>
             </ul>
           </div>
@@ -223,21 +237,44 @@
           <div class="join">
             <b class="footer-title">Присоединяйтесь</b>
             <ul class="list social flex-container">
-              <li>
-                <a href="https://www.instagram.com/" class="link">Instagram</a>
+              <li class="item">
+                <a href="https://www.instagram.com/" class="link radius-footer">
+                  <svg class="footer-link" width="20px" height="20px">
+                    <use href="./img/symbol-defs (1).svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a href="https://twitter.com/" class="link">Twitter</a></li>
-              <li>
-                <a href="https://www.facebook.com/" class="link">Facebook</a>
+              <li class="item">
+                <a href="https://twitter.com/" class="link radius-footer">
+                  <svg class="footer-link" width="20px" height="16px">
+                    <use href="./img/symbol-defs (1).svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/" class="link">Linkedin</a>
+              <li class="item">
+                <a href="https://www.facebook.com/" class="link radius-footer">
+                  <svg class="footer-link" width="10px" height="20px">
+                    <use href="./img/symbol-defs (1).svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="https://www.linkedin.com/" class="link radius-footer">
+                  <svg class="footer-link" width="20px" height="20px">
+                    <use href="./img/symbol-defs (1).svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
-          <div>
+
+          <div class="flex-email">
             <b class="footer-title">Подпишитесь на рассылку</b>
+            <div class="button-email"><span>E-mail</span></div>
           </div>
+          <!-- <div class="button-telegram-flex">
+          <button class="button-telegram"> <span>Подписаться <svg  width="24px" height="24px"><use href="./img/sprite.svg#icon-telegram"></use></svg></span> </button>
+         </div> -->
         </div>
       </div>
     </footer>
